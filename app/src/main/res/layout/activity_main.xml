@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b1b0b0">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="List of avaiable audio"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:weightSum="4">
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_play"
+            android:onClick="playAudio"/>
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8"
+            android:layout_marginLeft="10dp"
+            android:textColor="#757575"
+            android:text="audio.mp3"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_cloud"
+            android:layout_marginRight="6dp"
+            android:onClick="upload"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@android:color/white"
+        android:weightSum="4">
+        <ImageView
+            android:id="@+id/playbutton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_play"
+            android:onClick="playAudio"/>
+        <TextView
+            android:id="@+id/filename1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.8"
+            android:layout_marginLeft="10dp"
+            android:textColor="#757575"
+            android:text="audio.mp3"
+            android:gravity="center_vertical"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/upload1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_cloud"
+            android:layout_marginRight="6dp"
+            android:onClick="upload"/>
+
+    </LinearLayout>
+
+</LinearLayout>
